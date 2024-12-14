@@ -1,79 +1,41 @@
+# Data_Mining-Short_story_assignment
+#### Research Paper: https://arxiv.org/pdf/2407.12390
+#### Medium Article: https://medium.com/@shrutiebony/enhancing-facial-expression-recognition-with-dual-direction-attention-networks-7be155dbfacc
+#### Slide Deck Link: https://www.slideshare.net/slideshow/enhancing-facial-expression-recognition-with-ddamfn-pptx/273746973
+#### Youtube Video: https://www.youtube.com/watch?v=tfccY5c5RJA
 
-Here’s a template for a `README.md` file for your short story submission, assuming it needs to align with specific rubrics and includes various artifacts:
+## Abstract
+This project builds on the Dual-Direction Attention Mixed Feature Network (DDAMFN) architecture to improve facial expression recognition for the 7th ABAW Challenge at ECCV 2024. By leveraging multitask learning, the network simultaneously predicts:
 
----
+Valence-Arousal scores,
+Emotion categories (happiness, sadness, anger, etc.), and
+Facial Action Units (AUs) detection.
+The DDAMFN architecture employs attention mechanisms and mixed feature extraction techniques to enhance the representation of subtle facial expressions in real-world scenarios ("in-the-wild" datasets).
 
-# Short Story Submission
 
-## Title: *[Insert Story Title]*
 
-### Author: *[Your Name]*  
-**Submission Date:** *[Insert Date]*
 
----
+## Features
+### Dataset Curation
+Dataset: A subset of the Aff-Wild2 dataset (s-Aff-Wild2) provided for the 7th ABAW Challenge.
+Annotation Filtering: Strict curation was applied to remove invalid annotations. Frames containing annotation values outside acceptable ranges were excluded.
+Final dataset details:
+Training: 52,154 frames
+Validation: 15,440 frames
 
-## Overview
+## Network Architecture
+The model builds on:
 
-This repository contains the submission for my short story project, created as per the specified rubrics. The story showcases a unique narrative, engaging themes, and vivid storytelling techniques. All required artifacts are included, as detailed below.
+MobileFaceNet (MFN) for feature extraction.
+Dual-Direction Attention Module (DDA): A dual-head attention mechanism to enhance context learning.
+Global Depthwise Convolution (GDConv): Captures intricate spatial dependencies.
+Three Task-Specific Heads:
+Valence-Arousal Head: Predicts 2 values.
+Emotion Recognition Head: Predicts 8 emotion categories.
+Action Unit Head: Predicts 12 discrete facial muscle movements.
 
----
+## Evaluation Metrics
+Accuracy for discrete tasks (Emotion Recognition, Action Units).
+Concordance Correlation Coefficient (CCC) for continuous tasks (Valence-Arousal).
+Comparison against baseline methods provided by the ABAW challenge.
 
-## Artifacts Included
-
-1. **Short Story Document**  
-   - File Name: `short_story.docx`  
-   - Description: The complete story written in compliance with the rubric's word count, tone, and theme requirements.
-
-2. **Synopsis Document**  
-   - File Name: `synopsis.pdf`  
-   - Description: A concise summary of the story, outlining its main plot, themes, and key takeaways.
-
-3. **Rubric Compliance Checklist**  
-   - File Name: `rubric_checklist.pdf`  
-   - Description: A self-assessment checklist to ensure all rubric points are met.
-
-4. **Creative Process Outline**  
-   - File Name: `creative_process.md`  
-   - Description: A detailed outline of the steps taken to create the story, including brainstorming, drafting, editing, and finalization.
-
-5. **Supporting Artifacts (Optional)**  
-   - Visuals, concept sketches, or research notes that informed the narrative (if applicable).
-
----
-
-## How to Access
-
-1. **Short Story**  
-   Open the `short_story.docx` file to read the story in its entirety.
-
-2. **Synopsis**  
-   Review the `synopsis.pdf` file for a quick overview of the narrative.
-
-3. **Rubric Compliance**  
-   Check the `rubric_checklist.pdf` to verify adherence to the assignment requirements.
-
-4. **Creative Process**  
-   Refer to `creative_process.md` for insights into the story's development journey.
-
----
-
-## Rubric Highlights
-
-This project was evaluated on the following key criteria:
-- Originality and creativity in storytelling.
-- Clarity of narrative structure.
-- Adherence to the prescribed word count.
-- Effective use of language, tone, and imagery.
-- Submission of all required artifacts.
-
----
-
-## Feedback and Questions
-
-For any feedback or queries, please contact:  
-**Name:** *[Your Name]*  
-**Email:** *[Your Email Address]*
-
----
-
-Let me know if you need further customization or adjustments based on the specific details of your submission!
