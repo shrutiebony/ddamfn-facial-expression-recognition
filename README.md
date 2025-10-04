@@ -1,4 +1,4 @@
-# Data_Mining-Short_story_assignment
+# ddamfn-facial-expression-recognition
 #### Research Paper: https://arxiv.org/pdf/2407.12390
 #### Medium Article: https://medium.com/@shrutiebony/enhancing-facial-expression-recognition-with-dual-direction-attention-networks-7be155dbfacc
 #### Slide Deck Link: https://www.slideshare.net/slideshow/enhancing-facial-expression-recognition-with-ddamfn-pptx/273746973
